@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/934c6a31e3.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+   <title>Profile | Social Book</title>
+</head>
+<body>
+   <!-- Nav Start -->
+   <nav>
+      <div class="nav-left">
+         <a href="index.html"><img src="images/logo.png" class="logo"></a>
+
+         <ul>
+            <li><img src="images/notification.png" alt=""></li>
+            <li><img src="images/inbox.png" alt=""></li>
+            <li><img src="images/video.png" alt=""></li>
+         </ul>
+      </div>
+
+      <div class="nav-right">
+         <div class="search-box">
+            <img src="images/search.png" alt="">
+            <input type="text" placeholder="Search">
+         </div>
+         <div class="nav-user-icon online" onclick="menuDropdownToggle()">
+            <img src="images/profile-pic.png" >
+         </div>
+      </div>
+
+      <!-- Settings menu -->
+      <div class="settings-menu">
+         <div id="dark-btn">
+            <span></span>
+         </div>
+         <div class="settings-menu-inner">
+            <div class="user-profile">
+               <img src="images/profile-pic.png">
+               <div>
+                  <p>Zanetor Degbe</p>
+                  <a href="#">See your profile</a>
+               </div>
+            </div>
+
+            <hr>   
+            <div class="user-profile">
+               <img src="images/feedback.png">
+               <div>
+                  <p>Give Feedback</p>
+                  <a href="#">Help us to improve the new design</a>
+               </div>
+            </div>
+            <hr>
+
+            <div class="settings-links">
+               <img src="images/setting.png" class="settings-icon">
+               <a href="#">Settings & Privacy <img src="images/arrow.png" style="width: 10px"></a>
+            </div>
+            
+            <div class="settings-links">
+               <img src="images/help.png" class="settings-icon">
+               <a href="#">Help & Support <img src="images/arrow.png" style="width: 10px"></a>
+            </div>
+
+            <div class="settings-links">
+               <img src="images/display.png" class="settings-icon">
+               <a href="#">Display & Accessibility <img src="images/arrow.png" style="width: 10px"></a>
+            </div>
+
+            <div class="settings-links">
+               <img src="images/logout.png" class="settings-icon">
+               <a href="#">Logout <img src="images/arrow.png" style="width: 10px"></a>
+            </div>
+         </div>         
+      </div>
+   </nav>
+   <!-- Nav End -->
+
+   <!-- Profile Start -->
+   <div class="profile-container">
+      <img src="images/cover.png" class="cover-img">
+      <div class="profile-details">
+         <div class="pd-left">
+            <div class="pd-row">
+               <img src="images/profile.png" class="pd-img">
+               <div>
+                  <h3>Zanetor Degbe</h3>
+                  <p>145 Friends - 45 mutual friends</p>
+                  <img src="images/member-1.png">
+                  <img src="images/member-2.png">
+                  <img src="images/member-3.png">
+                  <img src="images/member-4.png">
+               </div>
+            </div>
+         </div>
+         <div class="pd-right">
+            <button type="button"> <img src="images/add-friends.png"> Friend</button>
+            <button type="button"> <img src="images/message.png"> Message</button>
+            <br>
+
+            <a href="#"><img src="images/more.png"></a>
+         </div>
+      </div>
+
+      <div class="profile-info">
+         <!-- Info Column start -->
+         <div class="info-col">
+            <div class="profile-intro">
+               <h3>Intro</h3>
+               <p class="intro-text">Consistency makes perfect <img src="images/feeling.png"></p>
+               <hr>
+
+               <ul>
+                  <li><img src="images/profile-job.png"> Manager at Some Company Ltd</li>
+                  <li><img src="images/profile-study.png"> Studied at some University</li>
+                  <li><img src="images/profile-home.png"> Lives at some place</li>
+                  <li><img src="images/profile-location.png"> From some place on earth</li>
+               </ul>
+            </div>
+
+            <div class="profile-intro">
+               <div class="title-box">
+                  <h3>Photos</h3>
+                  <a href="">All Photos</a>
+               </div>
+               <div class="photo-box">
+                  <div><img src="images/photo1.png"></div>
+                  <div><img src="images/photo2.png"></div>
+                  <div><img src="images/photo3.png"></div>
+                  <div><img src="images/photo4.png"></div>
+                  <div><img src="images/photo5.png"></div> 
+                  <div><img src="images/photo6.png"></div>                  
+               </div>
+            </div>
+
+            <div class="profile-intro">
+               <div class="title-box">
+                  <h3>Friends</h3>
+                  <a href="">All Friends</a>
+               </div>
+               <p>120 (10 mutual)</p>
+               <div class="friends-box">
+                  <div><img src="images/member-1.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-2.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-3.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-4.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-5.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-6.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-7.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-8.png"> <p>F. Name</p></div>
+                  <div><img src="images/member-9.png"> <p>F. Name</p></div>
+                               
+               </div>
+            </div>
+         </div>
+
+         <!-- Start Post Column -->
+         <div class="post-col">
+            <div class="write-post-container">
+               <!-- User profile -->
+               <div class="user-profile">
+                  <img src="images/profile-pic.png">
+                  <div>
+                     <p>Zanetor Degbe</p>
+                     <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                  </div>
+               </div>
+   
+               <div class="post-input-container">
+                  <textarea rows="3" placeholder="What's on your mind, Elon?"></textarea>
+                  <div class="add-post-links">
+                     <a href=""><img src="images/live-video.png"> Live Video</a>
+                     <a href=""><img src="images/photo.png"> Photo/Video</a>
+                     <a href=""><img src="images/feeling.png"> Feeling activity</a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Start Post Container -->
+            <div class="post-container">
+               <div class="post-row">
+                  <div class="user-profile">
+                     <img src="images/profile-pic.png">
+                     <div>
+                        <p>Zanetor Degbe</p>
+                        <span>July 18, 2023. 13:13</span>
+                     </div>
+                  </div>
+                  <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+               </div>
+               <p class="post-text">Lorem ipsum dolor sit, <span>@amet consectetur</span> adipisicing elit. 
+                  Consectetur tempore accusantium quod! 
+                  <a href="#">#MrDegbe</a> 
+                  <a href="#">#WebDev</a>
+               </p>
+               <img src="images/feed-image-1.png" class="post-img">
+   
+               <div class="post-row">
+                  <div class="activity-icons">
+   
+                     <div><img src="images/like-blue.png" > 120</div>
+                     <div><img src="images/comments.png" > 60</div>
+                     <div><img src="images/share.png" > 25</div>  
+                  </div>
+   
+                  <div class="post-profile-icon">
+                     <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                  </div>
+               </div>
+            </div>
+   
+               <!-- Duplicate -->
+            <div class="post-container">
+               <div class="post-row">
+                  <div class="user-profile">
+                     <img src="images/profile-pic.png">
+                     <div>
+                        <p>Zanetor Degbe</p>
+                        <span>July 18, 2023. 13:13</span>
+                     </div>
+                  </div>
+                  <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+               </div>
+               <p class="post-text">Lorem ipsum dolor sit, <span>@amet consectetur</span> adipisicing elit. 
+                  Consectetur tempore accusantium quod! 
+                  <a href="#">#MrDegbe</a> 
+                  <a href="#">#WebDev</a>
+               </p>
+               <img src="images/feed-image-2.png" class="post-img">
+   
+               <div class="post-row">
+                  <div class="activity-icons">
+   
+                     <div><img src="images/like-blue.png" > 120</div>
+                     <div><img src="images/comments.png" > 60</div>
+                     <div><img src="images/share.png" > 25</div>  
+                  </div>
+   
+                  <div class="post-profile-icon">
+                     <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="post-container">
+               <div class="post-row">
+                  <div class="user-profile">
+                     <img src="images/profile-pic.png">
+                     <div>
+                        <p>Zanetor Degbe</p>
+                        <span>July 18, 2023. 13:13</span>
+                     </div>
+                  </div>
+                  <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+               </div>
+               <p class="post-text">Lorem ipsum dolor sit, <span>@amet consectetur</span> adipisicing elit. 
+                  Consectetur tempore accusantium quod! 
+                  <a href="#">#MrDegbe</a> 
+                  <a href="#">#WebDev</a>
+               </p>
+               <img src="images/feed-image-3.png" class="post-img">
+   
+               <div class="post-row">
+                  <div class="activity-icons">
+   
+                     <div><img src="images/like-blue.png" > 120</div>
+                     <div><img src="images/comments.png" > 60</div>
+                     <div><img src="images/share.png" > 25</div>  
+                  </div>
+   
+                  <div class="post-profile-icon">
+                     <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="post-container">
+               <div class="post-row">
+                  <div class="user-profile">
+                     <img src="images/profile-pic.png">
+                     <div>
+                        <p>Zanetor Degbe</p>
+                        <span>July 18, 2023. 13:13</span>
+                     </div>
+                  </div>
+                  <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+               </div>
+               <p class="post-text">Lorem ipsum dolor sit, <span>@amet consectetur</span> adipisicing elit. 
+                  Consectetur tempore accusantium quod! 
+                  <a href="#">#MrDegbe</a> 
+                  <a href="#">#WebDev</a>
+               </p>
+               <img src="images/feed-image-4.png" class="post-img">
+   
+               <div class="post-row">
+                  <div class="activity-icons">
+   
+                     <div><img src="images/like-blue.png" > 120</div>
+                     <div><img src="images/comments.png" > 60</div>
+                     <div><img src="images/share.png" > 25</div>  
+                  </div>
+   
+                  <div class="post-profile-icon">
+                     <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="post-container">
+               <div class="post-row">
+                  <div class="user-profile">
+                     <img src="images/profile-pic.png">
+                     <div>
+                        <p>Zanetor Degbe</p>
+                        <span>July 18, 2023. 13:13</span>
+                     </div>
+                  </div>
+                  <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+               </div>
+               <p class="post-text">Lorem ipsum dolor sit, <span>@amet consectetur</span> adipisicing elit. 
+                  Consectetur tempore accusantium quod! 
+                  <a href="#">#MrDegbe</a> 
+                  <a href="#">#WebDev</a>
+               </p>
+               <img src="images/feed-image-5.png" class="post-img">
+   
+               <div class="post-row">
+                  <div class="activity-icons">
+   
+                     <div><img src="images/like-blue.png" > 120</div>
+                     <div><img src="images/comments.png" > 60</div>
+                     <div><img src="images/share.png" > 25</div>  
+                  </div>
+   
+                  <div class="post-profile-icon">
+                     <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <!-- End Post Column -->
+      </div>
+   </div>
+
+   <div class="footer">
+      <p>Copyright 2023 . Raymond Degbe</p>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
